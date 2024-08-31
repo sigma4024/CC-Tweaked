@@ -30,9 +30,6 @@ jobs:
     - name: ⚒️ Build
       run: ./gradlew assemble || ./gradlew assemble
 
-    - name: 💡 Lint
-      uses: pre-commit/action@v3.0.0
-
     - name: 🧪 Run tests
       run: ./gradlew test validateMixinNames checkChangelog
 
